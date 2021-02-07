@@ -12,11 +12,13 @@ namespace HelloApi.Controllers
     [Route("[controller]")]
     public class HelloController : ControllerBase
     {   
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<HelloController> _logger;
+        private readonly HelloService _helloService;
         
-        public HelloController(ILogger<WeatherForecastController> logger)
+        public HelloController(ILogger<HelloController> logger, HelloService helloService)
         {
             _logger = logger;
+            _helloService = helloService;
         }
 
         [HttpGet]
@@ -27,10 +29,9 @@ namespace HelloApi.Controllers
 
         [HttpGet]
         [Route("FromSidecar")]
-        public string GetFromSidecar()
+        public async Task<IActionResult> GetFromSidecar()
         {
-            var service = new HelloService();
-            return service.RetrieveHelloMessage().Message;
+            return Ok(await _helloService.RetrieveHelloMessage());
         }
     }
 }
