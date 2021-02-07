@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E835FEAF-94B0-42B8-BABF-5D82817316B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{677DB428-A998-47DB-A93F-A6F87BB934E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloApi", "src\HelloApi\HelloApi.csproj", "{79A105A8-94FE-4551-A582-902DA8A2038D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sidecar", "src\Sidecar\Sidecar.csproj", "{0EE29C13-E5B9-42B6-8EA4-4BAC9B0130BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79A105A8-94FE-4551-A582-902DA8A2038D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A105A8-94FE-4551-A582-902DA8A2038D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A105A8-94FE-4551-A582-902DA8A2038D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A105A8-94FE-4551-A582-902DA8A2038D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE29C13-E5B9-42B6-8EA4-4BAC9B0130BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE29C13-E5B9-42B6-8EA4-4BAC9B0130BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE29C13-E5B9-42B6-8EA4-4BAC9B0130BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE29C13-E5B9-42B6-8EA4-4BAC9B0130BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79A105A8-94FE-4551-A582-902DA8A2038D} = {E835FEAF-94B0-42B8-BABF-5D82817316B8}
+		{0EE29C13-E5B9-42B6-8EA4-4BAC9B0130BF} = {E835FEAF-94B0-42B8-BABF-5D82817316B8}
+	EndGlobalSection
+EndGlobal
