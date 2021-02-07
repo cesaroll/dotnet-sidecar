@@ -1,0 +1,21 @@
+# docker-compose up -d
+# docker-compose stop
+# docker-compose rm -f
+
+version: '3.8'
+services:
+  hello-sidecar-api:
+    image: cesar/hello-sidecar-api:latest
+    container_name: hello-sidecar-api
+    ports:
+      - "8180:8080"
+
+  hello-api:
+    image: cesar/hello-api:latest
+    container_name: hello-api
+    environment:
+      - SIDERCAR_URL=http://localhost:8180/
+    depends_on:
+      - hello-sidecar-api
+    ports:
+      - "8080:8080"

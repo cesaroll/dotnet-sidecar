@@ -18,7 +18,7 @@ namespace Sidecar.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new {Message = "Hello from Sidecar"});
+            return Ok(new {Message = "Hello from Sidecar Api"});
         }
     }
 }

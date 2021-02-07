@@ -9,7 +9,7 @@ namespace HelloApi.Services
 {
     public class HelloService
     {
-        private const string URL = "http://localhost:8180/Hello";
+        private const string URL = "http://host.docker.internal:8180/Hello";
         
         private readonly ILogger<HelloService> _logger;
 

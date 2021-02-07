@@ -30,7 +30,7 @@ namespace Sidecar
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sidecar", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "HelloSidecarApi", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace Sidecar
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sidecar v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HelloSidecarApi v1"));
             }
 
             app.UseHttpsRedirection();
